@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FeedbackList, FeedbackButton } from './Feedback.styled';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+const Feedback = ({ options, onLeaveFeedback }) => {
   return (
     <FeedbackList>
       {options.map(text => (
@@ -15,8 +15,8 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   );
 };
 
-FeedbackOptions.propTypes = {
+Feedback.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default FeedbackOptions;
+export default Feedback;
